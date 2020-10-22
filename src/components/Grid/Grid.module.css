@@ -1,0 +1,60 @@
+.grid {
+  position: absolute;
+  width: 100%;
+  height: 840px;
+  bottom: 0px;
+  padding: 0 auto;
+}
+
+.row {
+  height: 10px;
+}
+
+.node {
+  fill: white;
+  stroke: gray;
+  stroke-width: 0.5px;
+  transition: 0.2s;
+}
+
+.node:hover {
+  fill: lightgray;
+  transition: 0.2s;
+}
+
+.wall {
+  fill: #073b4c;
+  transition: all 0.2s;
+}
+
+.start {
+  fill: #118ab2;
+  transition: all 0.2s;
+}
+
+.end {
+  fill: #ef476f;
+  transition: all 0.2s;
+}
+
+.visited {
+  animation-name: load;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  fill: #ffd166;
+  transition: all 0.2s;
+}
+
+.path {
+  fill: #06d6a0;
+  transition: all 0.2s;
+}
+
+@keyframes load {
+  0% {
+    fill: #f9844a;
+  }
+  100% {
+    fill: #ffd166;
+  }
+}
